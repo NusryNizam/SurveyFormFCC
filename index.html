@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One|Roboto" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <!--Header Image -->
+    <div class="headImage">
+    </div>
+    <h1 id="title">SURVEY FORM</h1>
+    <div class="floating"></div>
+
+    <div class="container">
+      <div class="main">
+
+        <p id="description">Fill out the form below</p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label><br/>
+            <input type="text" id="name" placeholder="Your name" required><br/>
+
+            <label for="email" id="email-label">Email</label><br/>
+            <input type="email" required id="email" placeholder="Your email" required><br/>
+
+            <label for="number" id="number-label">Random Number</label><br/>
+            <input type="number" min="0" max="1000" id="number" placeholder="0 - 100" required><br/>
+
+            <label for="dropdown">Favorite Smartphone</label><br>
+            <select id="dropdown" name="Phones">
+              <option value="apple">Apple</option>
+              <option value="samsung">Samsung</option>
+              <option value="xiaomi">Xiaomi</option>
+              <option value="oneplus">OnePlus</option>
+              <option value="nokia">Nokia</option>
+              <option value="other">Other</option>
+            </select>
+            <br/>
+            <label>Gender</label><br/>
+            <div class="spacingDiv">
+              <input type="radio" name="Gender" value="male">Male<br/>
+              <input type="radio" name="Gender" value="female">Female<br/>
+            </div>
+
+            <label>Interested In</label><br/>
+            <div class="spacingDiv">
+              <input type="radio" name="interestedIn" value="male">Men<br/>
+              <input type="radio" name="interestedIn" value="female">Women<br/>
+            </div>
+
+            <label>Education</label><br/>
+            <div class="spacingDiv">
+              <input type="checkbox" value="SecondarySchool">Secondary School<br/>
+              <input type="checkbox" value="HighSchool">High School<br/>
+              <input type="checkbox" value="College">College<br/>
+            </div>
+
+            <label for="additionalcomments">Comments</label><br/>
+            <textarea id="additionalcomments" name="feedback" rows="1" cols="auto" placeholder="Additional comments"></textarea><br>
+            <button type="submit" id="submit">SUBMIT</button>
+          </form>
+
+
+      </div>
+    </div>
+    <footer>Designed by NusryNizam</footer>
+  </body>
+</html>
